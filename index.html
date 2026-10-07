@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sharon Chia | Marketing & GTM</title>
+
+  <meta
+    name="description"
+    content="Marketing and GTM portfolio focused on consumer insights, e-commerce, growth and international expansion."
+  />
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #171717;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --dark: #111827;
+      --purple: #4f46e5;
+      --purple-soft: #eef2ff;
+      --max-width: 1120px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 247, 245, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-size: 1.05rem;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+    }
+
+    .nav-resume {
+      padding: 8px 13px;
+      border-radius: 8px;
+      background: var(--dark);
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .hero {
+      padding: 88px 0 92px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.45fr 0.75fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: var(--purple-soft);
+      color: var(--purple);
+      font-size: 0.84rem;
+      font-weight: 650;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin-bottom: 24px;
+      font-size: clamp(3rem, 6vw, 5.1rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 19px;
+      border-radius: 10px;
+      font-size: 0.94rem;
+      font-weight: 650;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--dark);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .btn-secondary {
+      background: white;
+      border: 1px solid var(--line);
+    }
+
+    .btn-secondary:hover {
+      background: #f3f4f6;
+    }
+
+    .hero-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .hero-social a:hover {
+      color: var(--text);
+    }
+
+    .profile-card {
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-placeholder {
+      aspect-ratio: 1 / 0.9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+
+    .profile-image {
+      width: 100%;
+      aspect-ratio: 1 / 0.9;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-info {
+      padding: 25px;
+    }
+
+    .profile-info h3 {
+      margin-bottom: 4px;
+      font-size: 1.15rem;
+    }
+
+    .profile-info > p {
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .profile-points {
+      display: grid;
+      gap: 15px;
+    }
+
+    .profile-point strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 0.91rem;
+    }
+
+    .profile-point span {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-label {
+      margin-bottom: 13px;
+      color: var(--purple);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .section-title {
+      margin-bottom: 17px;
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .section-intro {
+      max-width: 740px;
+      margin-bottom: 47px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .about-highlight {
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .about-highlight h3 {
+      margin-bottom: 18px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      background: #f3f4f6;
+      border-radius: 999px;
+      color: #374151;
+      font-size: 0.87rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 22px;
+    }
+
+    .experience-card {
+      padding: 29px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .experience-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 18px;
+    }
+
+    .experience-title h3 {
+      margin-bottom: 4px;
+      font-size: 1.14rem;
+    }
+
+    .experience-title p,
+    .experience-date {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .experience-card ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .experience-card li {
+      margin-bottom: 10px;
+    }
+
+    .experience-card strong {
+      color: var(--text);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      min-height: 290px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      transition: 0.22s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.07);
+      border-color: #d1d5db;
+    }
+
+    .project-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .project-number {
+      color: var(--purple);
+      font-size: 0.79rem;
+      font-weight: 750;
+    }
+
+    .project-arrow {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #f3f4f6;
+      transition: 0.2s ease;
+    }
+
+    .project-card:hover .project-arrow {
+      transform: translate(3px, -3px);
+      background: var(--dark);
+      color: white;
+    }
+
+    .project-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    .project-card p {
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+
+    .project-meta {
+      margin-top: auto;
+      color: #4b5563;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .education-card {
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+    }
+
+    .contact-box {
+      padding: 58px;
+      background: var(--dark);
+      color: white;
+      border-radius: 27px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    .contact-box p {
+      max-width: 680px;
+      margin-bottom: 29px;
+      color: #d1d5db;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .contact-links a {
+      padding: 11px 16px;
+      border: 1px solid #374151;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      transition: 0.2s ease;
+    }
+
+    .contact-links a:hover {
+      background: white;
+      color: var(--dark);
+    }
+
+    footer {
+      padding: 35px 0 46px;
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 880px) {
+      .hero-grid,
+      .about-grid,
+      .project-grid,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-card {
+        max-width: 520px;
+      }
+
+      .nav-links a:not(.nav-resume) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      section {
+        padding: 72px 0;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .experience-top,
+      .education-card,
+      .footer-inner {
+        flex-direction: column;
+      }
+
+      .contact-box {
+        padding: 35px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">Sharon Chia</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" class="nav-resume">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <span class="eyebrow">Marketing · GTM · Growth</span>
+
+        <h1>Turning consumer insight into market growth.</h1>
+
+        <p class="hero-description">
+          NTU Master's student focused on Go-To-Market strategy,
+          consumer insights, e-commerce and international growth.
+          I translate customer behavior and market data into practical
+          strategies that help brands launch, grow and scale.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="resume.pdf"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Resume ↗
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Let's connect</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+
+    <img
+  src="profile.JPG"
+  alt="Sharon Chia"
+  class="profile-image"
+>
+
+        <div class="profile-info">
+
+          <h3>Sharon Chia</h3>
+
+          <p>Marketing · GTM · Consumer Growth</p>
+
+          <div class="profile-points">
+
+            <div class="profile-point">
+              <strong>Consumer Insight</strong>
+              <span>
+                Turning audience behavior into actionable marketing decisions.
+              </span>
+            </div>
+
+            <div class="profile-point">
+              <strong>Go-To-Market</strong>
+              <span>
+                Connecting positioning, channels and activation.
+              </span>
+            </div>
+
+            <div class="profile-point">
+              <strong>E-commerce & CRM</strong>
+              <span>
+                Driving acquisition, conversion and retention.
+              </span>
+            </div>
+
+            <div class="profile-point">
+              <strong>Cross-functional Execution</strong>
+              <span>
+                Working across marketing, business and technology.
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+
+      <div class="section-label">About</div>
+
+      <h2 class="section-title">
+        Building at the intersection of marketing, data and growth.
+      </h2>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p>
+            I am currently pursuing a Master's degree at
+            Nanyang Technological University in Singapore.
+          </p>
+
+          <p>
+            My previous experience spans beauty, retail, e-commerce,
+            CRM and business operations.
+          </p>
+
+          <p>
+            Across these roles, I became increasingly interested in one question:
+            how can companies understand consumers better and turn those insights
+            into scalable growth?
+          </p>
+
+          <p>
+            I am especially interested in Go-To-Market, product marketing,
+            growth marketing and international expansion for consumer
+            and technology companies.
+          </p>
+        </div>
+
+        <div class="about-highlight">
+          <h3>Focus Areas</h3>
+
+          <div class="tag-list">
+            <span class="tag">Go-To-Market</span>
+            <span class="tag">Product Marketing</span>
+            <span class="tag">Consumer Insights</span>
+            <span class="tag">Growth Strategy</span>
+            <span class="tag">E-commerce</span>
+            <span class="tag">CRM</span>
+            <span class="tag">Digital Marketing</span>
+            <span class="tag">International Expansion</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+
+      <div class="section-label">Experience</div>
+
+      <h2 class="section-title">
+        Experience across consumer brands and business operations.
+      </h2>
+
+      <p class="section-intro">
+        My experience combines brand marketing, CRM, e-commerce,
+        campaign execution and cross-functional business operations.
+      </p>
+
+      <div class="timeline">
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div class="experience-title">
+              <h3>Business Operations</h3>
+              <p>China Eastern Airlines</p>
+            </div>
+
+            <div class="experience-date">2024 — 2025</div>
+          </div>
+
+          <ul>
+            <li>
+              Supported an enterprise <strong>AI / LLM project</strong>,
+              coordinating business requirements across operational,
+              technology and governance teams.
+            </li>
+
+            <li>
+              Used reporting, stakeholder interviews and workflow analysis
+              to identify process bottlenecks.
+            </li>
+
+            <li>
+              Helped reduce cross-functional information transfer time by
+              approximately <strong>40%</strong>.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div class="experience-title">
+              <h3>CRM & Consumer Marketing</h3>
+              <p>YSL Beauty · L'Oréal Group</p>
+            </div>
+
+            <div class="experience-date">Marketing Experience</div>
+          </div>
+
+          <ul>
+            <li>
+              Supported CRM strategy across a membership base of
+              <strong>595K+</strong> consumers.
+            </li>
+
+            <li>
+              Built segmented customer journeys covering acquisition,
+              first purchase, repurchase, retention and loyalty.
+            </li>
+
+            <li>
+              CRM activation contributed to
+              <strong>+56% weekly activity</strong> and
+              <strong>+144% YoY conversion growth</strong>.
+            </li>
+
+            <li>
+              Supported integrated product launch campaigns combining
+              e-commerce, livestreaming and digital content.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div class="experience-title">
+              <h3>Marketing</h3>
+              <p>CHALING · Sephora China</p>
+            </div>
+
+            <div class="experience-date">2022 — 2023</div>
+          </div>
+
+          <ul>
+            <li>
+              Conducted channel and product performance analysis to identify
+              sales patterns and top-performing products.
+            </li>
+
+            <li>
+              Supported the end-to-end launch of a new fragrance product.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-top">
+            <div class="experience-title">
+              <h3>Integrated Marketing</h3>
+              <p>Publicis Groupe</p>
+            </div>
+
+            <div class="experience-date">2022</div>
+          </div>
+
+          <ul>
+            <li>
+              Supported integrated campaigns for global beauty brands
+              including Bobbi Brown and Aveda.
+            </li>
+
+            <li>
+              Coordinated campaign assets, execution and cross-team communication.
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-label">Selected Work</div>
+
+      <h2 class="section-title">
+        How I think about markets, consumers and growth.
+      </h2>
+
+      <p class="section-intro">
+        Selected work combining market research, consumer insight,
+        growth strategy and Go-To-Market thinking.
+      </p>
+
+      <div class="project-grid">
+
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <div class="project-number">01 · GTM CASE</div>
+            <div class="project-arrow">↗</div>
+          </div>
+
+          <h3>Bringing a Chinese Consumer Brand into Singapore</h3>
+
+          <p>
+            A Go-To-Market case exploring how a Chinese consumer brand
+            could enter Singapore, from consumer segmentation to
+            positioning and channel strategy.
+          </p>
+
+          <div class="project-meta">
+            Market Research · Consumer Insight · Positioning · Channel Strategy
+          </div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <div class="project-number">02 · CRM</div>
+            <div class="project-arrow">↗</div>
+          </div>
+
+          <h3>CRM Growth Strategy</h3>
+
+          <p>
+            Customer lifecycle strategy covering acquisition,
+            first purchase, repurchase, retention and loyalty.
+          </p>
+
+          <div class="project-meta">
+            CRM · Segmentation · Retention · Conversion
+          </div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <div class="project-number">03 · PRODUCT LAUNCH</div>
+            <div class="project-arrow">↗</div>
+          </div>
+
+          <h3>Integrated Product Launch</h3>
+
+          <p>
+            A product launch approach combining consumer targeting,
+            content, livestreaming and e-commerce activation.
+          </p>
+
+          <div class="project-meta">
+            Launch Strategy · Content · KOL/KOC · E-commerce
+          </div>
+        </a>
+
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <div class="project-number">04 · AI</div>
+            <div class="project-arrow">↗</div>
+          </div>
+
+          <h3>AI-enabled Business Operations</h3>
+
+          <p>
+            Cross-functional project supporting the adoption of
+            AI and LLM capabilities in enterprise business operations.
+          </p>
+
+          <div class="project-meta">
+            AI · Business Analysis · Process Improvement · Stakeholders
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-label">Skills</div>
+
+      <h2 class="section-title">
+        Strategy, analytics and execution.
+      </h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Marketing & GTM</h3>
+
+          <p>
+            Go-To-Market Strategy · Product Marketing · Consumer Insights ·
+            Campaign Strategy · Brand Positioning
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Growth & E-commerce</h3>
+
+          <p>
+            CRM · Customer Segmentation · Retention · E-commerce ·
+            Livestreaming · KOL / KOC
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Analytics & Tools</h3>
+
+          <p>
+            Excel · SQL · Tableau · SAP · JIRA · ChatGPT · Gemini · Copilot
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="section-label">Education</div>
+
+      <div class="education-card">
+        <div>
+          <h3>Nanyang Technological University</h3>
+          <p>Master's Degree</p>
+        </div>
+
+        <p>Singapore</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+
+      <div class="contact-box">
+        <h2>Let's build something that grows.</h2>
+
+        <p>
+          I'm currently exploring opportunities in Go-To-Market,
+          product marketing, growth marketing and international business.
+          If you're building products or brands for global markets,
+          I'd love to connect.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="resume.pdf"
+            target="_blank"
+          >
+            Resume ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Sharon Chia</span>
+      <span>Marketing · GTM · Growth</span>
+    </div>
+  </footer>
+
+</body>
+</html>
